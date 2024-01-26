@@ -1,0 +1,35 @@
+.nav{
+    height: 4vmax;
+    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    gap: 1.1vmax;
+    padding-left: 2vmax;
+    margin-bottom: .5vmax;
+}
+
+.btn{
+    border: none;
+    outline: none;
+    background-color: aquamarine;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.list{
+    list-style: none;
+    /* background-color: red; */
+    display: flex;
+    overflow: auto;
+    gap: .5vmax;
+}
+
+.paginate{
+    width: 100%;
+    justify-content: center;
+    margin-top: .5vmax;
+    display: flex;
+    gap: 1vmax;
+    list-style: none;
+    cursor: pointer;
+}

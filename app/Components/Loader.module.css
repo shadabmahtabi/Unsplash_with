@@ -1,0 +1,30 @@
+.main {
+    height: 70vh;
+    width: 100%;
+    /* background-color: limegreen; */
+}
+
+.loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* transform: translate(-50%, -50%); */
+    height: 5vh;
+    width: 5vh;
+    background-color: aquamarine;
+    transform: rotate(-45deg);
+    scale: .1;
+    animation: loader 1s ease-in-out 1s infinite both alternate;
+}
+
+@keyframes loader {
+    0% {
+        scale: 3;
+        transform: rotate(180deg);
+    }
+    50% {
+        scale: 2;
+        border-radius: 50%;
+        transform: rotate(-45deg);
+    }
+}

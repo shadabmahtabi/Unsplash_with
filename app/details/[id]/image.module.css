@@ -1,0 +1,39 @@
+.nav{
+    height: 4vmax;
+    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    gap: 1.1vmax;
+    padding-left: 2vmax;
+    margin-bottom: .5vmax;
+}
+
+.btn{
+    border: none;
+    outline: none;
+    background-color: aquamarine;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.imgBox{
+    height: 40vmax;
+    width: 100vmax;
+    /* background-color: rebeccapurple; */
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.img{
+    height: 100%;
+    max-width: 60%;
+    /* background-color: red; */
+}
+
+.detsBox{
+    height: 100%;
+    width: 40%;
+    /* background-color: aqua; */
+    padding-left: 1vw;
+}

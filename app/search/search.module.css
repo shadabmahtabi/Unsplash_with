@@ -1,0 +1,70 @@
+.header{
+    height: 11vmax;
+    background-color: aquamarine;
+    display: flex;
+    align-items: flex-start;
+    /* gap: 1vmax; */
+}
+
+.backBtn{
+    padding: 1vmax;
+    border: none;
+    outline: none;
+    background-color: aquamarine;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.form{
+    height: 100%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1vmax;
+    gap: .5vmax;
+    /* background-color: red; */
+}
+
+.inp{
+    height: 2.5vmax;
+    width: 40%;
+    padding-left: .8vmax;
+    font-size: 1.2rem;
+    outline: none;
+    border: 1px solid #000;
+    border-radius: .5vmax;
+}
+
+.btn{
+    padding: .5vmax 2vmax;
+    font-size: 1rem;
+    background-color: rgb(255, 255, 255);
+    outline: none;
+    border: 1px solid #000;
+    border-radius: .5vmax;
+    cursor: pointer;
+}
+
+.list{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1vmax;
+    padding: 1vmax 0;
+    list-style: none;
+    /* background-color: red; */
+}
+
+.paginate{
+    height: 2vmax;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 1vmax;
+    list-style: none;
+    cursor: pointer;
+    margin-bottom: 1vmax;
+}
