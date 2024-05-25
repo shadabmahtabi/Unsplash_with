@@ -24,7 +24,7 @@ const Details = (props) => {
     }
 
     // console.log(dets.first_name + dets.last_name)
-    console.log(dets)
+    // console.log(dets)
 
     useEffect(()=>{
         getDetails();
@@ -45,8 +45,8 @@ const Details = (props) => {
             <div className={css.detsBox}>
                 <h1>Author Name : {dets.first_name} {dets.last_name}</h1>
                 <h2>username: {dets.username}</h2>
-                <h2>Instagram username : {dets.instagram_username}</h2>
-                <h2><a href={dets.portfolio_url}>My Portfolio</a></h2>
+                <h2>Instagram Profile : <a href={`https://www.instagram.com/${dets.instagram_username}/`}>{dets.instagram_username}</a></h2>
+                <h2><a href={dets.portfolio_url}>View Potfolio</a></h2>
             </div>
         </div>
     </>
