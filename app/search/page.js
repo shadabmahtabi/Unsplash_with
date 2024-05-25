@@ -39,8 +39,8 @@ const SearchImages = () => {
         searchedImages = images.map((img, i)=>{
 
             return (
-                <li key={img.id}>
-                    <Link href={`/details/${img.id}`}><img src={img.urls.regular} height={500} alt="" /></Link>
+                <li key={img.id} className={css.li}>
+                    <Link href={`/details/${img.id}`}><img src={img.urls.regular} className={css.img} height={500} alt="" /></Link>
                 </li>
             )
         })
@@ -71,7 +71,7 @@ const SearchImages = () => {
             <button onClick={goBack} className={css.backBtn}>←</button>
             <form onSubmit={SubmitHandler} className={css.form}>
                 <h1 className={css.h1}>Search Images</h1>
-                <input type="text" value={inpData} onChange={(e)=> setInputData(e.target.value)} className={css.inp} required/>
+                <input type="text" value={inpData} onChange={(e)=> setInputData(e.target.value)} className={css.inp} placeholder="what do you want..." required/>
                 <button className={css.btn}>Search</button>
             </form>
         </div>

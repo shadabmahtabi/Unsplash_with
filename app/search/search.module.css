@@ -1,63 +1,156 @@
-.header{
-    height: 11vmax;
-    background-color: aquamarine;
-    display: flex;
-    align-items: flex-start;
-    /* gap: 1vmax; */
+.header {
+  height: 12vmax;
+  width: 100vmax;
+  background-color: aquamarine;
+  display: flex;
+  align-items: flex-start;
+  /* gap: 1vmax; */
 }
 
-.backBtn{
-    padding: 1vmax;
-    border: none;
-    outline: none;
-    background-color: aquamarine;
-    font-size: 2rem;
-    cursor: pointer;
+.backBtn {
+  padding: 1vmax;
+  border: none;
+  outline: none;
+  background-color: aquamarine;
+  font-size: 2rem;
+  cursor: pointer;
 }
 
-.form{
-    height: 100%;
-    width: 90%;
-    display: flex;
+.form {
+  height: 100%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1vmax;
+  gap: 0.5vmax;
+  /* background-color: red; */
+}
+
+.inp {
+  height: 2.5vmax;
+  width: 40%;
+  padding-left: 0.8vmax;
+  font-size: 1rem;
+  outline: none;
+  border: 1px solid #000;
+  border-radius: 0.5vmax;
+}
+
+.inp:not(:placeholder-shown) {
+    border-radius: 3vmax;
+    transition: .3s all;
+    padding-left: 1vmax;
+}
+
+.btn {
+  padding: 0.5vmax 2vmax;
+  font-size: 1rem;
+  background-color: rgb(255, 255, 255);
+  outline: none;
+  border: 1px solid #000;
+  border-radius: 0.5vmax;
+  cursor: pointer;
+  transition: .3s all;
+}
+
+.btn:hover {
+  border-radius: 3vmax;
+}
+
+.list {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1vmax;
+  padding: 1vmax 0;
+  list-style: none;
+  /* background-color: red; */
+}
+
+.paginate {
+  height: 2vmax;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  gap: 1vmax;
+  list-style: none;
+  cursor: pointer;
+  margin-bottom: 1vmax;
+}
+
+@media screen and (max-width: 700px) {
+  .header {
+    height: 22vmax;
+    width: 100vmin;
     flex-direction: column;
-    align-items: center;
-    padding-top: 1vmax;
-    gap: .5vmax;
+  }
+
+  .backBtn {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 1vmax 0 0 2vmax;
+    font-size: 2.3rem;
+    cursor: pointer;
+  }
+
+  .form {
+    width: 100%;
+    justify-content: center;
+    gap: 1vmax;
     /* background-color: red; */
-}
+    padding: 0 0 1vmax 0;
+  }
 
-.inp{
-    height: 2.5vmax;
-    width: 40%;
-    padding-left: .8vmax;
-    font-size: 1.2rem;
-    outline: none;
-    border: 1px solid #000;
-    border-radius: .5vmax;
-}
+  .h1 {
+    font-size: 3vmax;
+    margin-bottom: 1vmax;
+  }
 
-.btn{
-    padding: .5vmax 2vmax;
+  .inp {
+    height: 4vmax;
+    width: 80%;
+    padding-left: 0.8vmax;
+    font-size: 1rem;
+    border-radius: 1vmax;
+  }
+
+  .btn {
+    padding: 0.7vmax 2.5vmax;
     font-size: 1rem;
     background-color: rgb(255, 255, 255);
     outline: none;
     border: 1px solid #000;
-    border-radius: .5vmax;
+    border-radius: 1vmax;
     cursor: pointer;
-}
+  }
 
-.list{
-    width: 100vw;
+  .list {
+    width: 100%;
+    height: 74vmax;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 1vmax;
     padding: 1vmax 0;
-    list-style: none;
-    /* background-color: red; */
-}
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
 
-.paginate{
+  .li {
+    width: fit-content;
+    max-height: 100%;
+  }
+
+  .img {
+    height: 20vmax;
+  }
+
+  .paginate {
     height: 2vmax;
     width: 100%;
     display: flex;
@@ -66,5 +159,6 @@
     gap: 1vmax;
     list-style: none;
     cursor: pointer;
-    margin-bottom: 1vmax;
+    margin: 0.5vmax 0 0 0;
+  }
 }

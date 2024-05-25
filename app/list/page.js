@@ -15,8 +15,8 @@ const Trending = () => {
 
     const renderImages = data.map((img, i)=>{
         return(
-            <li key={img.id}>
-                <Link href={`/details/${img.id}`}><img height={600} src={img.urls.regular} alt="" /></Link>
+            <li key={img.id} className={css.li} >
+                <Link href={`/details/${img.id}`}><img className={css.img} src={img.urls.regular} alt="" /></Link>
             </li>
         )
     })
@@ -50,6 +50,7 @@ const Trending = () => {
             <button onClick={goBack} className={css.btn}>←</button>
             <h1 className={css.h1}>Trending Images</h1>
         </div>
+        {/* <h2 className={css.h2}>Slide <span className={css.btn}>→</span></h2> */}
         <ul className={css.list}>{renderImages}</ul>
         <ReactPaginate
             breakLabel="..."

@@ -31,7 +31,7 @@ const page = () => {
   return (
     <>
       <div className={css.main}>
-        <h1 className={css.h1}>Unsplash For Pictures</h1>
+        <h1 className={css.h1}>Unsplash Image Gallery</h1>
         <div className={css.btnsClass}>
           <button onClick={trendingHandler} className={css.btn}>Trending Images</button>
           <button onClick={searchHandler} className={css.btn}>Search Images</button>
