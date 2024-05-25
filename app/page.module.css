@@ -33,7 +33,7 @@
   border: none;
   background-color: aquamarine;
   font-weight: 500;
-  transition: .5s all;
+  transition: 0.5s all;
 }
 
 .btn:hover {
@@ -168,14 +168,16 @@
   .h1 {
     padding-left: 2vmax;
     font-size: 2.8vmax;
+    height: 8%;
   }
 
   .btnsClass {
     height: 91%;
     flex-direction: column;
+    justify-content: flex-start;
     gap: 2vmax;
   }
-
+  
   .btn {
     padding: 0;
     height: 7%;
@@ -184,6 +186,10 @@
     border: none;
     background-color: aquamarine;
     font-weight: 500;
+  }
+  
+  .btn:first-child {
+    margin-top: 30vmax;
   }
 
   .content {

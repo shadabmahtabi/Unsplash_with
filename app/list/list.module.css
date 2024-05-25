@@ -64,7 +64,7 @@
 @media screen and (max-width: 700px) {
 
     .nav{
-        height: 10vmax;
+        height: 7vmax;
         gap: 2vmax;
         margin-bottom: .5vmax;
         font-size: 1.5vmax;
@@ -89,7 +89,7 @@
     }
     
     .paginate{
-        margin-top: .5vmax;
+        margin-top: 1vmax;
         display: flex;
         justify-content: center;
     }
